@@ -4,9 +4,9 @@
 
 Repository ini digunakan untuk **pengumpulan tugas praktikum mahasiswa** pada mata kuliah **Pemrograman Berbasis Web (Front-End)**.
 
-📍 Program Studi Sistem Informasi
-🎓 Fakultas Teknologi Informasi
-🏫 Universitas Sebelas April
+* 📍 Program Studi Sistem Informasi
+* 🎓 Fakultas Teknologi Informasi
+* 🏫 Universitas Sebelas April
 
 ---
 
@@ -128,10 +128,12 @@ branch NIM → master
 
 Tugas dianggap **valid** apabila:
 
+```
 ✔ Pull Request berhasil dibuat
 ✔ Struktur folder benar
 ✔ File tugas dapat dijalankan
 ✔ Pull Request di-merge oleh dosen
+```
 
 ---
 
@@ -181,7 +183,22 @@ Panduan lengkap dapat dibaca di:
 
 # ✨ Contributors
 
+<!-- ALL-CONTRIBUTORS-LIST:START -->
+
+<table>
+<tr>
+<td align="center">
+<a href="https://github.com/PBWFEND/SI-IV-B/graphs/contributors">
+<img src="https://contrib.rocks/image?repo=PBWFEND/SI-IV-B" alt="Contributors" />
+</a>
+</td>
+</tr>
+</table>
+
 <p align="center">
-<img src="https://contrib.rocks/image?repo=PBWFEND/SI-IV-B">
+<a href="#"><img src="https://img.shields.io/github/forks/PBWFEND/SI-IV-B?label=fork&style=social"></a>
+<a href="#"><img src="https://img.shields.io/github/contributors/PBWFEND/SI-IV-B"></a>
+<a href="#"><img src="https://img.shields.io/github/last-commit/PBWFEND/SI-IV-B"></a>
 </p>
 
+<!-- ALL-CONTRIBUTORS-LIST:END -->
