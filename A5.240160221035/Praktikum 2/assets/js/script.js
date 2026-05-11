@@ -1,77 +1,56 @@
 
 const title = 'Belajar JavaScript';
-
-alert(title);
-console.log('Selamat datang di website portofolio');
-
-
-const umur = 20;
-
-
-if (umur < 18) {
-  console.log('Masih remaja');
-} else {
-  console.log('Sudah dewasa');
-}
-
-
-setTimeout(() => {
-  console.log('Timer finished');
-}, 1000);
-
-
-if (true) {
-  let hobi = 'Mendengarkan Musik';
-  console.log(hobi);
-}
-
-
-function sapa() {
-  alert('Halo, terima kasih sudah mengunjungi portofolio saya!');
-}
-
-
-function generateRandomColor() {
-  const colors = [
-    'cornflowerblue',
-    '#7BAAF7',
-    '#89C2FF',
-    '#A7C7FF'
-  ];
-
-  const randomIndex = Math.floor(Math.random() * colors.length);
-  return colors[randomIndex];
-}
-
-
-function changeBackgroundColor() {
-  document.body.style.backgroundColor = generateRandomColor();
-}
-
-
-const skill = [
-  'Canva',
-  'Microsoft Word',
-  'Microsoft Excel'
-];
-
-console.log(skill);
-
-for (let i = 0; i < skill.length; i++) {
-  console.log(skill[i]);
-}
-
-const mahasiswa = {
+const profil = {
   nama: 'Rahma Nadya',
   umur: 20,
   jurusan: 'Sistem Informasi'
 };
 
-console.log(mahasiswa);
+alert(title);
 
+class Keahlian {
+  constructor(nama) {
+    this.nama = nama;
+  }
+  tampilkan() {
+    console.log("Skill: " + this.nama);
+  }
+}
 
-window.onload = function () {
-  changeBackgroundColor();
+const listSkill = [
+  new Keahlian('Canva'),
+  new Keahlian('Microsoft Word'),
+  new Keahlian('Microsoft Excel'),
+  new Keahlian('phpMyAdmin'),
+];
+
+function sapa() {
+  alert('Halo, terima kasih sudah mengunjungi portofolio saya!');
+}
+
+function generateRandomColor() {
+  const colors = ['cornflowerblue', '#7BAAF7', '#89C2FF', '#A7C7FF'];
+  const randomIndex = Math.floor(Math.random() * colors.length);
+  return colors[randomIndex];
+}
+
+function jalankanSistem() {
+  document.body.style.backgroundColor = generateRandomColor();
   
-};
+  sapa();
 
+  console.log('Selamat datang di website portofolio ' + profil.nama);
+  
+  if (profil.umur < 18) {
+    console.log('Status: Masih remaja');
+  } else {
+    console.log('Status: Sudah dewasa');
+  }
+
+  console.log('--- Daftar Keahlian ---');
+  listSkill.forEach(item => {
+    item.tampilkan();
+  });
+}
+
+window.onload = jalankanSistem;
