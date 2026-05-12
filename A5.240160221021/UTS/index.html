@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Lintang Azzahra Govarana</title>
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">LINTANG<span>PORTFOLIO</span></div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Hobbies</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle">🌙</button>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <img src="images/profile/foto-profil.jpg" alt="Profile" class="profile-img">
+            <h1>Halo, Saya <span>Lintang Azzahra Govarana</span></h1>
+            <p class="tagline">Mahasiswa Sistem Informasi | Digital Enthusiast</p>
+            
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/lintang-azzahra-911067407" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/azl7.126" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.spotify.com" target="_blank"><i class="fab fa-spotify"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2 class="title">About <span>Me</span></h2>
+        <div class="about-container">
+            <p>Halo! Saya Lintang Azzahra Govarana, mahasiswa Sistem Informasi yang tertarik dengan teknologi digital dan hal-hal kreatif.</p>
+            <div class="skills">
+                <div class="skill-item">
+                    <span>UI/UX Design</span>
+                    <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span>Programming Logic</span>
+                    <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="section">
+        <h2 class="title">My <span>Hobbies</span></h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="images/projects/movies.jpg" alt="Movies">
+                <h3 style="margin-top: 10px;">Watching Movies</h3>
+            </div>
+            <div class="portfolio-item">
+                <img src="images/projects/reading.jpg" alt="Reading">
+                <h3 style="margin-top: 10px;">Reading Books</h3>
+            </div>
+            <div class="portfolio-item">
+                <img src="images/projects/cats.jpg" alt="Cats">
+                <h3 style="margin-top: 10px;">Playing with Cats</h3>
+            </div>
+            <div class="portfolio-item">
+                <img src="images/projects/travel.jpg" alt="Travel">
+                <h3 style="margin-top: 10px;">Traveling</h3>
+            </div>
+            <div class="portfolio-item">
+                <img src="images/projects/food.jpg" alt="Food">
+                <h3 style="margin-top: 10px;">Culinary</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2 class="title">Contact <span>Me</span></h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Nama Lengkap" required>
+            <input type="email" placeholder="Email Aktif" required>
+            <textarea placeholder="Pesan Anda" required></textarea>
+            <button type="submit" style="background: #2563eb; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Kirim Pesan</button>
+        </form>
+    </section>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
