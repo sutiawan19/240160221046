@@ -153,7 +153,7 @@ const projects = [
         title: "Desain Poster Digital",
         category: "design",
         image: "assets/image/Project/poster.jpg",
-        description: "Desain grafis menggunakan Canva untuk event kampus"
+        description: "Desain publikasi digital untuk pendaftaran organisasi Badminton FTI menggunakan tools Canva. Proyek ini mencakup penataan tata letak visual dan penyampaian informasi pendaftaran secara efektif."
     },
     {
         id: 4,
