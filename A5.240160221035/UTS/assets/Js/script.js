@@ -144,7 +144,7 @@ const projects = [
     {
         id: 2,
         title: "Hello React-JSX Children & Attributes",
-        category: "Web",
+        category: "web",
         image: "assets/image/Project/jsx-children-attributes.png",
         description:"Mempelajari JSX di React, termasuk penggunaan children elements dan custom attributes pada komponen."
     },
@@ -158,7 +158,7 @@ const projects = [
     {
         id: 4,
         title: "UTS Portofolio Website",
-        category: "data",
+        category: "web",
         image: "assets/image/Project/Proyek UTS Website Portofolio.png",
         description: "Proyek UTS website portofolio profesional dengan fitur Dark Mode, filter portofolio, lightbox, form validasi, dan responsive design."
     },
@@ -172,7 +172,7 @@ const projects = [
     {
         id: 6,
         title: "Analisis Data",
-        category: "Data",
+        category: "data",
         image: "assets/image/Project/Data Balance Sheet.png",
         description: "Proyek analisis data menggunakan Excel"
     }
