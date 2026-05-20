@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello React</title>
+    <!-- Load React dan ReactDOM dari CDN (versi terbaru React 18) -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <!-- Load Babel untuk kompilasi JSX -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      // Menggunakan metode baru React 18
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+
+// Membuat elemen JSX yang lebih kompleks
+const elemenProfil = (
+  <div className="kartu-profil" style={{ border: '1px solid #ccc', padding: '20px', borderRadius: '10px', width: '300px' }}>
+    <img src="https://via.placeholder.com/150" alt="Foto Profil" />
+    <h3>{ "Rahma Nadya" }</h3>
+    <p>Mahasiswa Sistem Informasi</p>
+    <p>Universitas Sebelas April</p>
+  </div>
+);
+
+root.render(elemenProfil);
