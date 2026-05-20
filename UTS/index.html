@@ -1,76 +1,263 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="id">
 <head>
-  <meta charset="UTF-8" />
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Portfolio Sutiawan</title>
-
-  <!-- Light Mode Favicon -->
-  <link rel="icon" type="image/png" href="assets/images/favicon-light.png" media="(prefers-color-scheme: light)">
-
-  <!-- Dark Mode Favicon -->
-  <link rel="icon" type="image/png" href="assets/images/favicon-dark.png" media="(prefers-color-scheme: dark)">
-
-  <!-- Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
-
-  <!-- Tailwind -->
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahma Nadya| Portofolio Mahasiswa Sistem Informasi</title>
+    
+   
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+       
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+<body>
 
-<body class="text-gray-800">
-
-  <div id="page-loader" class="fixed inset-0 z-[9999] flex items-center justify-center bg-[#f5f1ea]">
-
-    <div class="flex flex-col items-center gap-5">
-
-      <div class="w-14 h-14 border-[3px] border-gray-300 border-t-black rounded-full animate-spin"></div>
-
-      <h1 class="text-2xl font-black tracking-tight animate-pulse">
-        SUTIAWAN_
-      </h1>
-
+    <!-- Loading Animation -->
+    <div id="loading">
+        <div class="loader"></div>
     </div>
 
-  </div>
+    <!-- Header Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <span class="logo-text">Rahma<span class="highlight">Nadya</span></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portofolio</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button id="darkModeToggle" class="dark-mode-btn">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
 
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text animate-fadeInUp">
+                    <h1>Halo, Saya <span class="highlight">Rahma Nadya</span></h1>
+                    <h2>Mahasiswa Sistem Informasi | Calon Data Analyst</h2>
+                    <p>Mahasiswa Sistem Informasi di Universitas Sebelas April, saya bertekad menjadi Data Analyst yang mampu menyusun strategi melalui analisis yang mendalam. Saya percaya bahwa ketelitian adalah kunci dalam mengubah data mentah menjadi keputusan yang tepat."</p>
+                    <div class="social-links">
+                         <a href="https://www.instagram.com/_rahma.nadya" target="_blank"><i class="fab fa-instagram"></i></a>
+                          <a href="https://github.com/RahmaNadya240160221035-source/SI-IV-B/tree/240160221035"target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">Hubungi Saya</a>
+                </div>
+                <div class="hero-image animate-fadeInRight">
+                    <div class="profile-frame">
+                     <img src="assets/image/profile/rahma.jpeg" alt="Rahma Nadya" class="profile-img">
 
-  <!-- Components -->
-  <div id="navbar"></div>
-  <div id="hero"></div>
-  <div id="about"></div>
-  <div id="experience"></div>
-  <div id="project"></div>
-  <div id="explore-projects"></div>
-  <div id="footer"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- JS -->
-  <script src="assets/js/main.js"></script>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Tentang Saya</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Halo! Saya <strong>Rahma Nadya</strong>, mahasiswa aktif Sistem Informasi di Universitas Sebelas April. Saya memiliki ketertarikan besar pada dunia data analytics dan pengembangan web.</p>
+                    <p>Saya percaya bahwa <strong>"Kreativitas adalah intelijensi yang bersenang-senang"</strong> - Albert Einstein. Prinsip ini yang memotivasi saya untuk terus belajar hal baru di bidang teknologi.</p>
+                    <p>Selain akademik, saya aktif berorganisasi untuk mengembangkan soft skill dan jaringan profesional.</p>
+                </div>
+                <div class="skills">
+                    <h3>Skills & Expertise</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>HTML & CSS</span>
+                            <a href="https://www.instagram.com/_rahma.nadya" target="_blank"><i class="fab fa-instagram"></i></a>
 
-  <script>
-    window.onload = function () {
-      const loader = document.getElementById("page-loader");
+                            <span>75%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>JavaScript</span>
+                            <span>65%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 65%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>SQL & Database</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%"></div>
+                        </div>
+                   
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-      setTimeout(() => {
-        loader.style.opacity = "0";
-        loader.style.visibility = "hidden";
+            <!-- Education Timeline -->
+            <div class="education">
+                <h3>Education & Organisasi</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">2024 - Sekarang</div>
+                        <div class="timeline-content">
+                            <h4>S1 Sistem Informasi</h4>
+                            <p>Universitas Sebelas April (UNSAP)</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2025 - Sekarang</div>
+                        <div class="timeline-content">
+                            <h4>Bendahara UKM Olahraga</h4>
+                            <p>Unit Kegiatan Mahasiswa Olahraga UNSAP</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2025</div>
+                        <div class="timeline-content">
+                            <h4>Panitia Program HIMA</h4>
+                            <p>Himpunan Mahasiswa Sistem Informasi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        setTimeout(() => {
-          loader.style.display = "none";
-        }, 700);
+            <!-- Hobi -->
+            <div class="hobbies">
+                <h3>Hobi & Minat</h3>
+                <div class="hobby-list">
+                    <span class="hobby-tag"><i class="fas fa-table-tennis"></i> Badminton</span>
+                    <span class="hobby-tag"><i class="fas fa-film"></i> Menonton Film</span>
+                    <span class="hobby-tag"><i class="fas fa-headphones"></i> Mendengarkan Musik</span>
+                    <span class="hobby-tag"><i class="fas fa-chart-line"></i> Data Analytics</span>
+                </div>
+            </div>
 
-      }, 2000);
-    };
-  </script>
+            <!-- Lagu Favorit -->
+            <div class="favorite-song">
+                <h3>Lagu Favorit</h3>
+                <audio controls>
+                    <source src="assets/Audio/Bruno Mars - Risk It All [The Romantic].mp3" type="audio/mpeg">
+                    Browser Anda tidak mendukung audio.
+                </audio>
+                <p class="song-caption">Bruno Mars - Risk It All</p>
+            </div>
+        </div>
+    </section>
 
+    <!-- Portfolio Gallery Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Portfolio Proyek</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="data">Data</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+            </div>
+            <div class="portfolio-grid" id="portfolioGrid">
+                <!-- Projects akan diisi JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal-->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightboxImg">
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Hubungi Saya</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>240160221035@student.unsap.ac.id</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telepon</h4>
+                            <p>+6285524696749</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Lokasi</h4>
+                            <p>Pasanggrahan Baru, Sumedang, Jawa Barat</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-instagram"></i>
+                        <div>
+                            <h4>Instagram</h4>
+                            <p>_rahma.nadya</p>
+                        </div>
+                    </div>
+                </div>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Nama Lengkap" required>
+                        <div class="error-message" id="nameError"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Email" required>
+                        <div class="error-message" id="emailError"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" placeholder="Subjek" required>
+                        <div class="error-message" id="subjectError"></div>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder="Pesan" required></textarea>
+                        <div class="error-message" id="messageError"></div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                    <div id="formSuccess" class="success-message" style="display: none;"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Portofolio Rahma Nadya - Mahasiswa Sistem Informasi UNSAP</p>
+            <p>Dibuat dengan <i class="fas fa-heart"></i> untuk UTS Pemrograman Web</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
 </body>
-
 </html>
