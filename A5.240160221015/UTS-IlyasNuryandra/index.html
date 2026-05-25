@@ -1,0 +1,433 @@
+
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ilyas Nuryandra — Portofolio</title>
+  <meta name="description" content="Portfolio profesional Ilyas Nuryandra — Full Stack Developer & UI/UX Designer" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="Assets/css/custom.css" />
+</head>
+<body>
+
+  <!-- ░░░ LOADING SCREEN ░░░ -->
+  <div id="loader" class="loader">
+    <div class="loader__inner">
+      <div class="loader__logo">IN</div>
+      <div class="loader__bar"><span></span></div>
+    </div>
+  </div>
+
+  <!-- ░░░ HEADER / NAVIGATION ░░░ -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <!-- Logo -->
+      <a href="#home" class="nav__logo" aria-label="Ilyas Nuryandra">
+        <img src="Assets/logo.svg" alt="AR Logo" class="nav__logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+        <span class="nav__logo-text" style="display:none">IN</span>
+      </a>
+
+      <!-- Menu -->
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#home"      class="nav__link" data-scroll="home">Home</a></li>
+        <li><a href="#about"     class="nav__link" data-scroll="about">About</a></li>
+        <li><a href="#portfolio" class="nav__link" data-scroll="portfolio">Work</a></li>
+        <li><a href="#contact"   class="nav__link" data-scroll="contact">Contact</a></li>
+      </ul>
+
+      <!-- Actions -->
+      <div class="nav__actions">
+        <button class="btn-icon" id="themeToggle" aria-label="Toggle theme" title="Toggle dark/light mode">
+          <i class="fas fa-moon" id="themeIcon"></i>
+        </button>
+        <button class="btn-icon nav__hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ░░░ HERO SECTION ░░░ -->
+  <section class="hero" id="home">
+    <div class="hero__bg">
+      <div class="hero__grid"></div>
+      <div class="hero__orb hero__orb--1"></div>
+      <div class="hero__orb hero__orb--2"></div>
+    </div>
+
+    <div class="hero__content container">
+      <div class="hero__text">
+        <p class="hero__eyebrow reveal">Creative Developer</p>
+        <h1 class="hero__name reveal">
+          <span>Ilyas</span>
+          <em>Nuryandra</em>
+        </h1>
+        <p class="hero__tagline reveal">
+          Crafting digital experiences that merge <br/>
+          <strong>technical precision</strong> with <strong>artistic vision</strong>
+        </p>
+
+        <div class="hero__cta reveal">
+          <a href="#portfolio" class="btn btn--primary">View My Work</a>
+          <a href="#contact"   class="btn btn--ghost">Let's Talk</a>
+        </div>
+
+        <!-- Social Links -->
+        <div class="hero__social reveal">
+          <a href="https://github.com/IlyasNuryandra17" class="social-link" aria-label="GitHub" title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="#" class="social-link" aria-label="LinkedIn" title="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://www.instagram.com/nuryandra._" class="social-link" aria-label="Instagram" title="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__visual reveal">
+        <div class="hero__photo-frame">
+          <div class="hero__photo-border"></div>
+          <img
+            src="../UTS-IlyasNuryandra/Assets/images/profile/Foto Profil Ilyas.jpeg"
+            alt="Ilyas Nuryandra"
+            class="hero__photo"
+            loading="eager"
+          />
+          <div class="hero__photo-badge">
+            <i class="fas fa-check-circle"></i> Available for work
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="hero__scroll-hint" aria-label="Scroll down">
+      <span>Scroll</span>
+      <i class="fas fa-arrow-down"></i>
+    </a>
+  </section>
+
+  <!-- ░░░ ABOUT SECTION ░░░ -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label">Who I Am</span>
+        <h2 class="section__title">About <em>Me</em></h2>
+      </div>
+
+      <div class="about__grid">
+        <!-- Description -->
+        <div class="about__text">
+          <p class="about__lead">
+            Saya adalah mahasiswa Sistem Informasi Yang memiliki minat pada FrontEnd Dev, UI/UX Designer dengan passion mendalam terhadap teknologi dan estetika digital.
+          </p>
+          <p>
+            Walaupun dengan pengalaman saya yang masih sedikit, saya selalu berusaha mengasah kemampuan untuk membangun produk digital yang tidak hanya fungsional, tetapi juga memiliki tampilan yang memukau dan pengalaman pengguna yang intuitif.
+          </p>
+          <p>
+            Ketika tidak sedang coding, saya biasanya mengisi waktu luang dengan membaca.
+          </p>
+
+          <a href="assets/docs/cv.pdf" class="btn btn--primary" download>
+            <i class="fas fa-download"></i> Download CV
+          </a>
+        </div>
+
+        <!-- Skills -->
+        <div class="about__skills">
+          <h3>Core Skills</h3>
+          <div class="skills-list">
+            <div class="skill-item" data-percent="55">
+              <div class="skill-item__header">
+                <span>HTML / CSS</span>
+                <span class="skill-item__val">55%</span>
+              </div>
+              <div class="skill-item__bar"><span style="width:0%"></span></div>
+            </div>
+            <div class="skill-item" data-percent="50">
+              <div class="skill-item__header">
+                <span>JavaScript / TypeScript</span>
+                <span class="skill-item__val">50%</span>
+              </div>
+              <div class="skill-item__bar"><span style="width:0%"></span></div>
+            </div>
+            <div class="skill-item" data-percent="50">
+              <div class="skill-item__header">
+                <span>UI/UX Design</span>
+                <span class="skill-item__val">50%</span>
+              </div>
+              <div class="skill-item__bar"><span style="width:0%"></span></div>
+            </div>
+            <div class="skill-item" data-percent="50">
+              <div class="skill-item__header">
+                <span>React.js</span>
+                <span class="skill-item__val">50%</span>
+              </div>
+              <div class="skill-item__bar"><span style="width:0%"></span></div>
+            </div>
+            <div class="skill-item" data-percent="60">
+              <div class="skill-item__header">
+                <span>UI/UX Design</span>
+                <span class="skill-item__val">55%</span>
+              </div>
+              <div class="skill-item__bar"><span style="width:0%"></span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education Timeline -->
+        <div class="about__timeline">
+          <h3>Education</h3>
+          <div class="timeline">
+            <div class="timeline__item">
+              <div class="timeline__dot"></div>
+              <div class="timeline__content">
+                <span class="timeline__year">2021 — 2024</span>
+                <h4>SMA - Jurusan IPS</h4>
+                <p>SMA NEGERI DARMARAJA</p>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <div class="timeline__dot"></div>
+              <div class="timeline__content">
+                <span class="timeline__year">2024 - Sekarang</span>
+                <h4>S1 Sistem Informasi</h4>
+                <p>UNIVERSITAS SEBELAS APRIL</p>
+              </div>
+            </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░░ PORTFOLIO SECTION ░░░ -->
+  <section class="portfolio section" id="portfolio">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label">My Work</span>
+        <h2 class="section__title">Selected <em>Projects</em></h2>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="portfolio__filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web Dev</button>
+        <button class="filter-btn" data-filter="ui">UI/UX</button>
+        <button class="filter-btn" data-filter="mobile">Mobile</button>
+        <button class="filter-btn" data-filter="branding">Branding</button>
+      </div>
+
+      <!-- Portfolio Grid -->
+      <div class="portfolio__grid" id="portfolioGrid">
+
+        <article class="portfolio__card" data-category="web" data-title="E-Commerce Platform" data-desc="Website Toko dengan fitur login, manajemen karyawan, pelanggan, pemasok, dan data produk." data-tech="" data-img="../UTS-IlyasNuryandra/Assets/images/projects/sitoko.png">
+          <div class="portfolio__card-img">
+            <img src="../UTS-IlyasNuryandra/Assets/images/projects/sitoko.png" alt="Website SITOKO V1.0" loading="lazy" />
+            <div class="portfolio__card-overlay">
+              <button class="btn-icon btn--gold" aria-label="Preview project"><i class="fas fa-expand"></i></button>
+            </div>
+          </div>
+          <div class="portfolio__card-info">
+            <span class="portfolio__card-tag">Web Dev</span>
+            <h3>Website SITOKO V1.0</h3>
+          </div>
+        </article>
+
+        <article class="portfolio__card" data-category="ui" data-title="Finance Dashboard" data-desc="Dashboard analitik keuangan dengan visualisasi data real-time, prediksi AI, dan laporan otomatis. Dirancang untuk kemudahan penggunaan oleh eksekutif perusahaan." data-tech="Figma · React · Chart.js" data-img="../UTS-IlyasNuryandra/Assets/images/projects/FinanceDashboard.png">
+          <div class="portfolio__card-img">
+            <img src="../UTS-IlyasNuryandra/Assets/images/projects/FinanceDashboard.png" alt="Finance Dashboard" loading="lazy" />
+            <div class="portfolio__card-overlay">
+              <button class="btn-icon btn--gold" aria-label="Preview project"><i class="fas fa-expand"></i></button>
+            </div>
+          </div>
+          <div class="portfolio__card-info">
+            <span class="portfolio__card-tag">UI/UX</span>
+            <h3>Finance Dashboard</h3>
+            <p>Figma · React · Chart.js</p>
+          </div>
+        </article>
+
+        <article class="portfolio__card" data-category="mobile" data-title="FoodieGo App" data-desc="Aplikasi pemesanan makanan dengan fitur pelacakan pesanan real-time, rekomendasi berbasis AI, dan integrasi peta. Tersedia di iOS dan Android." data-tech="React Native · Firebase · Maps API" data-img="../UTS-IlyasNuryandra/Assets/images/projects/FoodieGoApp.png">
+          <div class="portfolio__card-img">
+            <img src="../UTS-IlyasNuryandra/Assets/images/projects/FoodieGoApp.png" alt="FoodieGo App" loading="lazy" />
+            <div class="portfolio__card-overlay">
+              <button class="btn-icon btn--gold" aria-label="Preview project"><i class="fas fa-expand"></i></button>
+            </div>
+          </div>
+          <div class="portfolio__card-info">
+            <span class="portfolio__card-tag">Mobile</span>
+            <h3>FoodieGo App</h3>
+            <p>React Native · Firebase</p>
+          </div>
+        </article>
+
+        <article class="portfolio__card" data-category="branding" data-title="Nusa Brand Identity" data-desc="Identitas brand lengkap untuk startup wellness Indonesia — logo, color palette, typography system, dan brand guidelines 50+ halaman." data-tech="Illustrator · Figma · Photoshop" data-img="../UTS-IlyasNuryandra/Assets/images/projects/NusaBranding.png">
+          <div class="portfolio__card-img">
+            <img src="../UTS-IlyasNuryandra/Assets/images/projects/NusaBranding.png" alt="Nusa Brand Identity" loading="lazy" />
+            <div class="portfolio__card-overlay">
+              <button class="btn-icon btn--gold" aria-label="Preview project"><i class="fas fa-expand"></i></button>
+            </div>
+          </div>
+          <div class="portfolio__card-info">
+            <span class="portfolio__card-tag">Branding</span>
+            <h3>Nusa Brand Identity</h3>
+            <p>Illustrator · Figma</p>
+          </div>
+        </article>
+
+        <article class="portfolio__card" data-category="web" data-title="CMS Blog Platform" data-desc="Platform blog dengan headless CMS, editor Markdown, SEO otomatis, dan mode gelap. Performa Lighthouse 98/100." data-tech="Next.js · Sanity CMS · Vercel" data-img="../UTS-IlyasNuryandra/Assets/images/projects/CMSBlogPlatform.png">
+          <div class="portfolio__card-img">
+            <img src="../UTS-IlyasNuryandra/Assets/images/projects/CMSBlogPlatform.png" alt="CMS Blog Platform" loading="lazy" />
+            <div class="portfolio__card-overlay">
+              <button class="btn-icon btn--gold" aria-label="Preview project"><i class="fas fa-expand"></i></button>
+            </div>
+          </div>
+          <div class="portfolio__card-info">
+            <span class="portfolio__card-tag">Web Dev</span>
+            <h3>CMS Blog Platform</h3>
+            <p>Next.js · Sanity · Vercel</p>
+          </div>
+        </article>
+
+        <article class="portfolio__card" data-category="ui" data-title="HealthTrack UX" data-desc="Redesign UX untuk aplikasi kesehatan — meningkatkan user retention 40% melalui simplifikasi alur onboarding dan gamifikasi progress." data-tech="Figma · Principle · UserTesting" data-img="../UTS-IlyasNuryandra/Assets/images/projects/HealthTrackUX.png">
+          <div class="portfolio__card-img">
+            <img src="../UTS-IlyasNuryandra/Assets/images/projects/HealthTrackUX.png" alt="HealthTrack UX" loading="lazy" />
+            <div class="portfolio__card-overlay">
+              <button class="btn-icon btn--gold" aria-label="Preview project"><i class="fas fa-expand"></i></button>
+            </div>
+          </div>
+          <div class="portfolio__card-info">
+            <span class="portfolio__card-tag">UI/UX</span>
+            <h3>HealthTrack UX</h3>
+            <p>Figma · Principle · UserTesting</p>
+          </div>
+        </article>
+
+
+      </div><!-- /portfolio__grid -->
+    </div>
+  </section>
+
+  <!-- ░░░ LIGHTBOX ░░░ -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Project preview">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Close"><i class="fas fa-times"></i></button>
+    <div class="lightbox__content">
+      <img src="" alt="" id="lightboxImg" loading="lazy" />
+      <div class="lightbox__info">
+        <span class="lightbox__tag" id="lightboxTag"></span>
+        <h3 id="lightboxTitle"></h3>
+        <p id="lightboxDesc"></p>
+        <p class="lightbox__tech"><i class="fas fa-code"></i> <span id="lightboxTech"></span></p>
+        <a href="#" class="btn btn--primary" target="_blank" rel="noopener">
+          <i class="fas fa-external-link-alt"></i> View Live
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ░░░ CONTACT SECTION ░░░ -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label">Get In Touch</span>
+        <h2 class="section__title">Let's <em>Connect</em></h2>
+      </div>
+
+      <div class="contact__grid">
+        <!-- Contact Info -->
+        <div class="contact__info">
+          <p class="contact__lead">
+            Punya proyek menarik atau ingin berkolaborasi? Saya selalu terbuka untuk mendiskusikan peluang baru.
+          </p>
+          <ul class="contact__details">
+            <li>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:ilyasnuryandra@gmail.com">ilyasnuryandra@gmail.com</a>
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              <a href="tel:+6285217196460">+62 852 1719 6460</a>
+            </li>
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Sumedang, Indonesia</span>
+            </li>
+          </ul>
+          <div class="contact__social">
+            <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact__form-wrap">
+          <form class="contact__form" id="contactForm" novalidate>
+            <div class="form__row">
+              <div class="form__group">
+                <label for="name">Nama Lengkap</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" autocomplete="name" />
+                <span class="form__error" id="nameError"></span>
+              </div>
+              <div class="form__group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="john@email.com" autocomplete="email" />
+                <span class="form__error" id="emailError"></span>
+              </div>
+            </div>
+            <div class="form__group">
+              <label for="subject">Subjek</label>
+              <input type="text" id="subject" name="subject" placeholder="Project Collaboration" />
+              <span class="form__error" id="subjectError"></span>
+            </div>
+            <div class="form__group">
+              <label for="message">Pesan</label>
+              <textarea id="message" name="message" rows="5" placeholder="Ceritakan tentang project Anda..."></textarea>
+              <span class="form__error" id="messageError"></span>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+              <span class="btn__text">Kirim Pesan</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+            <div class="form__success" id="formSuccess">
+              <i class="fas fa-check-circle"></i>
+              Pesan berhasil dikirim! Saya akan merespons dalam 24 jam.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░░ FOOTER ░░░ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <p class="footer__copy">
+          &copy; <span id="footerYear"></span> Ilyas Nuryandra. Crafted with <i class="fas fa-heart"></i> in Sumedang.
+        </p>
+        <a href="#home" class="footer__back-top" aria-label="Back to top">
+          <i class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
