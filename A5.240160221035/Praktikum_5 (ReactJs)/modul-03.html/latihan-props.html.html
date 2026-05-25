@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modul 03: Latihan</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+        body { 
+            font-family: sans-serif; 
+            display: flex; 
+            flex-direction: column;
+            align-items: center;
+            gap: 20px; 
+            padding: 40px; 
+            background-color: #f9f9f9;
+        }
+        .container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .kartu-profil {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 16px;
+            text-align: center;
+            width: 200px;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .kartu-profil img { 
+            width: 150px; 
+            height: 150px; 
+            border-radius: 50%; 
+            object-fit: cover; 
+        }
+        .kartu-profil h3 { 
+            margin: 10px 0 5px 0; 
+            color: #333;
+        }
+        .kartu-profil p { 
+            margin: 0; 
+            color: #666; 
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+   <h2 style="color: #444; margin-bottom: 10px;">Daftar Hobi Anggota</h2>
+
+    <div id="root" class="container"></div>
+
+    <script type="text/babel">
+        // 1. Komponen ProfilPengguna dengan props gambar, nama, dan hobi
+        function ProfilPengguna({ gambar, nama, hobi }) {
+            return (
+                <div className="kartu-profil">
+                    <img src={gambar} alt={"Foto " + nama} />
+                    <h3>{nama}</h3>
+                    <p>🎯 Hobi: {hobi}</p>
+                </div>
+            );
+        }
+
+        // 2. Komponen App untuk merender tiga profil pengguna berbeda
+        function App() {
+            return (
+                <React.Fragment>
+                    <ProfilPengguna 
+                        gambar="rahma.jpeg" 
+                        nama="Rahma Nadya" 
+                        hobi="Mendengarkan Musik & Badminton" 
+                    />
+                    <ProfilPengguna 
+                        gambar="Putri.jpeg" 
+                        nama="Putri Indra Lestari Aryanto" 
+                        hobi="Badminton & Memasak" 
+                    />
+                    <ProfilPengguna 
+                        gambar="Taehyung.jpg" 
+                        nama="Kim Taehyung" 
+                        hobi="Musik & Gaming" 
+                    />
+                </React.Fragment>
+            );
+        }
+        
+        // 3. Merender komponen ke dalam elemen dengan id="root"
+        const container = document.getElementById('root');
+        const root = ReactDOM.createRoot(container);
+        root.render(<App />);
+    </script>
+
+</body>
+</html>
