@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Portfolio profesional futuristik - Developer kreatif dengan sentuhan cyber modern">
+  <meta name="author" content="Fadhlan Cyberspace">
+  <meta name="keywords" content="portfolio, developer, futuristik, UI/UX, cyber, modern">
+  <title>Fadhlan | Futuristic Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="../UTS/asset/image/1.jpg" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="../UTS/asset/css/custom.css">
+</head>
+<body>
+
+<!-- Loading Animation -->
+<div id="loader-wrapper">
+  <div class="loader">
+    <div class="cyber-spinner"></div>
+    <div class="loader-text">INITIALIZING<span class="dot-anim">...</span></div>
+  </div>
+</div>
+
+<!-- Dark/Light mode toggle -->
+<div class="theme-toggle" id="themeToggle" aria-label="Dark/Light mode">
+  <i class="fas fa-sun"></i>
+  <i class="fas fa-moon"></i>
+</div>
+
+<!-- Sticky Navigation -->
+<nav class="navbar" id="navbar">
+  <div class="container nav-container">
+    <div class="logo">
+      <a href="#home"><span class="logo-glow">AN</span><span class="logo-dot">.</span></a>
+    </div>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-bg-glow"></div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="glow-text">✦ PORTFOLIO 2K25 ✦</span>
+        </div>
+        <h1 class="hero-title">
+          <span class="title-line">Fadhlan</span>
+          <span class="title-typing" id="typedText"></span>
+        </h1>
+        <p class="hero-desc">Mengubah ide menjadi pengalaman digital yang immersive & futuristik. UI/UX Designer & Frontend Architect.</p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary glow-on-hover"><i class="fas fa-paper-plane"></i> Hire Me</a>
+          <a href="#" class="btn btn-outline" id="downloadCV"><i class="fas fa-download"></i> Download CV</a>
+        </div>
+        <div class="social-links">
+          <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="profile-card-glow">
+          <img src="../UTS/asset/image/3.jpg" alt="Fadhlan MG Profile" class="profile-img" loading="eager">
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <i class="fas fa-arrow-down"></i>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title"><span class="title-accent">//</span> About Me</h2>
+        <div class="title-divider"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>Halo! Saya Fadhlan, seorang <span class="highlight">Creative Technologist</span> dengan 1+ tahun pengalaman membangun antarmuka digital yang memukau. Saya menggabungkan estetika cyber dengan fungsionalitas tinggi untuk menciptakan solusi modern.</p>
+          <p>Berkolaborasi dengan brand global & startup untuk menghadirkan identitas visual yang futuristik. Saat ini fokus pada Frontend & Desain Sistem Interaktif.</p>
+        </div>
+        <div class="skills-box">
+          <h3>Keahlian Utama</h3>
+          <div class="skill-item">
+            <span>UI/UX Design <i class="fab fa-figma"></i></span>
+            <div class="progress-bar"><div class="progress-fill" data-progress="90"></div></div>
+          </div>
+          <div class="skill-item">
+            <span>React / Next.js <i class="fab fa-react"></i></span>
+            <div class="progress-bar"><div class="progress-fill" data-progress="85"></div></div>
+          </div>
+          <div class="skill-item">
+            <span>CSS / Tailwind <i class="fab fa-css3-alt"></i></span>
+            <div class="progress-bar"><div class="progress-fill" data-progress="95"></div></div>
+          </div>
+          <div class="skill-item">
+            <span>Three.js / Animations</span>
+            <div class="progress-bar"><div class="progress-fill" data-progress="75"></div></div>
+          </div>
+        </div>
+      </div>
+      <!-- Education Timeline Modern -->
+      <div class="timeline-section">
+        <h3 class="timeline-title"><i class="fas fa-graduation-cap"></i> Education & Career</h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-icon"><i class="fas fa-university"></i></div>
+            <div class="timeline-content glass-card">
+              <span class="timeline-year">2021 - 2024</span>
+              <h4>Lulusan</h4>
+              <p>SMA Negeri Situraja</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-icon"><i class="fas fa-briefcase"></i></div>
+            <div class="timeline-content glass-card">
+              <span class="timeline-year">2024 - Sekarang</span>
+              <h4>Mahasiswa Sistem Informasi</h4>
+              <p>Universitas Sebelas April.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Gallery dengan Filter -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title"><span class="title-accent">//</span> Featured Works</h2>
+        <div class="title-divider"></div>
+      </div>
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="uiux">UI/UX</button>
+        <button class="filter-btn" data-filter="app">App</button>
+      </div>
+      <div class="portfolio-grid" id="portfolioGrid"></div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox">
+    <span class="close-lightbox">&times;</span>
+    <img class="lightbox-img" id="lightboxImg" alt="Preview">
+  </div>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title"><span class="title-accent">//</span> Contact Me</h2>
+        <div class="title-divider"></div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Let's Connect</h3>
+          <p>Siap untuk berkolaborasi? Kirim pesan dan saya akan segera merespon.</p>
+          <div class="contact-details">
+            <div><i class="fas fa-envelope"></i> fadhlanmahdan123@gmail.com</div>
+            <div><i class="fas fa-phone-alt"></i> +62 856 5966 1569</div>
+            <a href="https://www.instagram.com/fdhlanmahdan_" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+  <div><i class="fab fa-instagram"></i> @fdhlanmahdan_</div>
+</a>
+            <div><i class="fas fa-map-marker-alt"></i> Sumedang, ID</div>
+          </div>
+          <div class="social-links contact-social">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-discord"></i></a>
+          </div>
+        </div>
+        <form id="contactForm" class="contact-form glass-card">
+          <div class="form-group">
+            <input type="text" id="name" placeholder="Nama Lengkap" required>
+            <span class="error-msg" id="nameError"></span>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Email Address" required>
+            <span class="error-msg" id="emailError"></span>
+          </div>
+          <div class="form-group">
+            <textarea id="message" rows="4" placeholder="Pesan / Project brief..." required></textarea>
+            <span class="error-msg" id="msgError"></span>
+          </div>
+          <button type="submit" class="btn btn-primary w-full">Send Message <i class="fas fa-arrow-right"></i></button>
+          <div id="formNotification" class="notification hidden"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container footer-container">
+    <div class="footer-brand">
+      <div class="logo">&lt;AN/&gt;</div>
+      <p>Membangun masa depan digital dengan kode & kreativitas.</p>
+    </div>
+    <div class="footer-social">
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2025 Fadhlan — All rights reserved. Cyber Edition</p>
+    </div>
+  </div>
+  <button id="backToTop" class="back-to-top"><i class="fas fa-chevron-up"></i></button>
+</footer>
+
+<script src="../UTS/js/script.js"></script>
+</body>
+</html>

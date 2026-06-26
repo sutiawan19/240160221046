@@ -1,0 +1,575 @@
+/* ======================================================
+   GLOBAL
+====================================================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Sora', sans-serif;
+  overflow-x: hidden;
+
+  background: #f5f1ea;
+  color: #111827;
+
+  transition:
+    background-color .4s ease,
+    color .4s ease;
+}
+
+/* ======================================================
+   SMOOTH TRANSITION
+====================================================== */
+
+section,
+div,
+nav,
+a,
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span,
+svg,
+input,
+textarea,
+img {
+  transition:
+    background-color .4s ease,
+    color .4s ease,
+    border-color .4s ease,
+    opacity .4s ease,
+    transform .4s ease;
+}
+
+/* ======================================================
+   CUSTOM CURSOR
+====================================================== */
+
+html,
+body {
+  cursor: url("../images/cursor.png") 4 4, auto;
+}
+
+a,
+button,
+input,
+textarea,
+select {
+  cursor: url("../images/cursor.png") 4 4, pointer;
+}
+
+/* ======================================================
+   FLOATING ANIMATION
+====================================================== */
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-12px) rotate(4deg);
+  }
+
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+@keyframes floatingReverse {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(10px) rotate(-4deg);
+  }
+
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+.float-1 {
+  animation: floating 3s ease-in-out infinite;
+}
+
+.float-2 {
+  animation: floatingReverse 4s ease-in-out infinite;
+}
+
+.float-3 {
+  animation: floating 5s ease-in-out infinite;
+}
+
+/* ======================================================
+   FLOAT LOGO
+====================================================== */
+
+@keyframes floatingLogo {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.float-logo {
+  animation: floatingLogo 3s ease-in-out infinite;
+}
+
+/* ======================================================
+   NAVBAR
+====================================================== */
+
+.glass-navbar {
+  background: rgba(255, 255, 255, 0.45);
+
+  backdrop-filter:
+    blur(20px)
+    saturate(180%);
+
+  -webkit-backdrop-filter:
+    blur(20px)
+    saturate(180%);
+
+  border: 1px solid rgba(17, 24, 39, 0.06);
+
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+
+  position: relative;
+}
+
+.glass-navbar::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  border-radius: inherit;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,0.15) 0%,
+      rgba(255,255,255,0.03) 40%,
+      transparent 100%
+    );
+
+  pointer-events: none;
+}
+
+/* ======================================================
+   NAV LINK
+====================================================== */
+
+.nav-link,
+.mobile-nav-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  color: #374151;
+
+  transition: all .25s ease;
+}
+
+.nav-link:hover,
+.mobile-nav-link:hover {
+  color: #111827;
+  font-weight: 700;
+}
+
+.nav-link.active-link,
+.mobile-nav-link.active-link {
+  color: #111827;
+  font-weight: 700;
+}
+
+/* ======================================================
+   NAV DOT
+====================================================== */
+
+.nav-dot {
+  width: 10px;
+  height: 10px;
+
+  border-radius: 999px;
+
+  background: #111827;
+
+  opacity: 0;
+  transform: scale(.5);
+
+  transition: all .25s ease;
+}
+
+.nav-link:hover .nav-dot,
+.mobile-nav-link:hover .nav-dot,
+.nav-link.active-link .nav-dot,
+.mobile-nav-link.active-link .nav-dot {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* ======================================================
+   MARQUEE
+====================================================== */
+
+.marquee-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  overflow: hidden;
+
+  z-index: 0;
+  pointer-events: none;
+}
+
+.marquee-track {
+  display: flex;
+  width: fit-content;
+
+  animation: marqueeMove 25s linear infinite;
+}
+
+.marquee-track span {
+  flex-shrink: 0;
+
+  font-size: clamp(70px, 11vw, 220px);
+  font-weight: 900;
+
+  white-space: nowrap;
+
+  margin-right: 80px;
+
+  color: #f3f4f6;
+
+  text-shadow:
+    -2px -2px 0 #111827,
+     2px -2px 0 #111827,
+    -2px  2px 0 #111827,
+     2px  2px 0 #111827;
+
+  opacity: .06;
+
+  letter-spacing: -0.05em;
+  line-height: 1;
+}
+
+@keyframes marqueeMove {
+  0% {
+    transform: translate3d(0,0,0);
+  }
+
+  100% {
+    transform: translate3d(-50%,0,0);
+  }
+}
+
+/* ======================================================
+   SKILL BAR
+====================================================== */
+
+.skill-segment {
+  flex: 1;
+
+  height: 10px;
+
+  border-radius: 999px;
+
+  background: #d1d5db;
+
+  transform: scaleX(1);
+  transform-origin: left;
+
+  animation: skillShow .8s ease forwards;
+}
+
+.skill-segment.active {
+  background: #111827;
+}
+
+@keyframes skillShow {
+  from {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+/* ======================================================
+   LOADER
+====================================================== */
+
+#page-loader {
+  background: #f5f1ea;
+
+  transition:
+    opacity .7s ease,
+    visibility .7s ease;
+}
+
+#page-loader.loader-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* ======================================================
+   THEME TOGGLE
+====================================================== */
+
+#theme-toggle {
+  background: rgba(255,255,255,.75);
+
+  border: 1px solid rgba(17,24,39,.08);
+
+  backdrop-filter: blur(12px);
+}
+
+#theme-toggle:hover {
+  transform: scale(1.05);
+}
+
+#theme-icon {
+  color: #111827;
+
+  transition:
+    transform .5s ease,
+    color .4s ease;
+}
+
+/* ======================================================
+   DARK MODE
+====================================================== */
+
+body.dark-mode {
+  background: #111111;
+  color: #f3f4f6;
+}
+
+/* Section */
+
+body.dark-mode section {
+  background: #111111;
+}
+
+/* Typography */
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5 {
+  color: #ffffff !important;
+}
+
+body.dark-mode p,
+body.dark-mode span {
+  color: #d1d5db !important;
+}
+
+/* Navbar */
+
+body.dark-mode .glass-navbar {
+  background: rgba(24, 24, 27, 0.55);
+
+  border: 1px solid rgba(255,255,255,0.06);
+
+  box-shadow:
+    0 8px 32px rgba(0,0,0,0.35),
+    inset 0 1px 0 rgba(255,255,255,0.03);
+}
+
+/* Nav Link */
+
+body.dark-mode .nav-link,
+body.dark-mode .mobile-nav-link {
+  color: #d1d5db;
+}
+
+body.dark-mode .nav-link:hover,
+body.dark-mode .mobile-nav-link:hover,
+body.dark-mode .nav-link.active-link,
+body.dark-mode .mobile-nav-link.active-link {
+  color: white;
+}
+
+/* Nav Dot */
+
+body.dark-mode .nav-dot {
+  background: white;
+}
+
+/* Skill */
+
+body.dark-mode .skill-segment {
+  background: #27272a;
+}
+
+body.dark-mode .skill-segment.active {
+  background: #f3f4f6;
+}
+
+/* Loader */
+
+body.dark-mode #page-loader {
+  background: #111111;
+}
+
+/* Toggle */
+
+body.dark-mode #theme-toggle {
+  background: rgba(39,39,42,.8);
+
+  border-color: rgba(255,255,255,.06);
+}
+
+body.dark-mode #theme-icon {
+  color: white;
+}
+
+/* Marquee */
+
+body.dark-mode .marquee-track span {
+  color: #18181b;
+
+  text-shadow:
+    -2px -2px 0 rgba(255,255,255,.06),
+     2px -2px 0 rgba(255,255,255,.06),
+    -2px  2px 0 rgba(255,255,255,.06),
+     2px  2px 0 rgba(255,255,255,.06);
+}
+
+/* ======================================================
+   EXCLUDE DARK MODE
+   EXPLORE PROJECTS & FOOTER
+====================================================== */
+
+body.dark-mode #explore-projects,
+body.dark-mode footer {
+  background: #f5f1ea !important;
+}
+
+/* ALL TEXT */
+
+body.dark-mode #explore-projects *,
+body.dark-mode footer * {
+  color: inherit !important;
+}
+
+/* HEADING */
+
+body.dark-mode #explore-projects h1,
+body.dark-mode #explore-projects h2,
+body.dark-mode #explore-projects h3,
+body.dark-mode #explore-projects h4,
+body.dark-mode #explore-projects h5,
+body.dark-mode footer h1,
+body.dark-mode footer h2,
+body.dark-mode footer h3,
+body.dark-mode footer h4,
+body.dark-mode footer h5 {
+  color: #111827 !important;
+}
+
+/* PARAGRAPH */
+
+body.dark-mode #explore-projects p,
+body.dark-mode #explore-projects span,
+body.dark-mode #explore-projects a,
+body.dark-mode footer p,
+body.dark-mode footer span,
+body.dark-mode footer a {
+  color: #374151 !important;
+}
+
+/* BUTTON */
+
+body.dark-mode #explore-projects button,
+body.dark-mode #explore-projects .btn-primary,
+body.dark-mode footer button,
+body.dark-mode footer .btn-primary {
+  background: #111827 !important;
+
+  color: white !important;
+
+  border-color: transparent !important;
+}
+
+/* CARD */
+
+body.dark-mode #explore-projects .glass-card,
+body.dark-mode #explore-projects .project-card,
+body.dark-mode #explore-projects .card,
+body.dark-mode footer .glass-card,
+body.dark-mode footer .project-card,
+body.dark-mode footer .card {
+  background: rgba(255,255,255,0.55) !important;
+
+  border: 1px solid rgba(17,24,39,0.08) !important;
+
+  backdrop-filter: blur(14px);
+}
+
+/* INPUT */
+
+body.dark-mode #explore-projects input,
+body.dark-mode #explore-projects textarea,
+body.dark-mode footer input,
+body.dark-mode footer textarea {
+  background: white !important;
+
+  color: #111827 !important;
+
+  border-color: #d1d5db !important;
+}
+
+/* ICON */
+
+body.dark-mode #explore-projects svg,
+body.dark-mode footer svg {
+  color: inherit !important;
+}
+
+/* BORDER */
+
+body.dark-mode #explore-projects *,
+body.dark-mode footer * {
+  border-color: rgba(17,24,39,0.08);
+}
+
+/* ======================================================
+   MOBILE
+====================================================== */
+
+@media (max-width: 768px) {
+
+  .marquee-wrapper {
+    top: 180px;
+    bottom: auto;
+  }
+
+}

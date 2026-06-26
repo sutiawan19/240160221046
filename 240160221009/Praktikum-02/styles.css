@@ -1,0 +1,180 @@
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaeaea;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+    /* Overflow */
+    overflow: auto;
+}
+
+/* Class Selector */
+.text-center {
+    text-align: center;
+}
+
+/* ID Selector */
+#tentang {
+    background-color: #f4f9ff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Heading */
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #2980b9;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #2980b9;
+    padding-bottom: 5px;
+}
+
+/* Image */
+img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border: 4px solid #2980b9;
+    margin-bottom: 20px;
+}
+
+/* Paragraph */
+p {
+    margin-bottom: 15px;
+}
+
+/* Blockquote */
+blockquote {
+    font-style: italic;
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-left: 5px solid #2980b9;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #2980b9;
+    color: white;
+}
+
+/* List */
+.hobi-list {
+    list-style-type: square;
+    list-style-position: inside;
+    margin-bottom: 20px;
+}
+
+.skill-list {
+    list-style-type: upper-alpha;
+    list-style-position: inside;
+    margin-bottom: 20px;
+}
+
+/* Audio */
+audio {
+    display: block;
+    margin: 20px auto;
+}
+
+/* Video */
+iframe {
+    display: block;
+    margin: 20px auto;
+    border: 3px solid #2980b9;
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+/* Link */
+a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #1f6391;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:active {
+    color: red;
+}
+
+/* Hidden Element */
+.hidden-text {
+    display: none;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #777;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .container {
+        padding: 15px;
+    }
+
+    img {
+        width: 130px;
+        height: 130px;
+    }
+
+    iframe {
+        width: 100%;
+        height: 250px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
