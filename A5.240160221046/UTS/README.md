@@ -2,7 +2,7 @@
 # Portfolio Website - Sutiawan
 
 Website portfolio personal modern yang dibuat menggunakan **HTML**, **Tailwind CSS**, dan **JavaScript**.  
-Project ini dibuat dengan proses desain terlebih dahulu di **Figma**, kemudian dilakukan slicing menjadi website responsive modern dengan berbagai animasi interaktif.
+Project ini dibuat dengan proses desain terlebih dahulu di **Figma**, kemudian dilakukan slicing menjadi website responsive modern dengan animasi interaktif.
 
 ---
 
@@ -183,6 +183,20 @@ Project ini dibuat untuk:
 * Kebutuhan pembelajaran
 * Pengumpulan tugas UTS
 * Showcase design & development process
+
+---
+
+# 🌐 Hosting & Deployment
+
+Project portfolio ini di-host menggunakan:
+
+- Vercel
+- GitHub Repository
+- Automatic Deployment
+
+Website dapat diakses secara online melalui:
+
+
 
 ---
 

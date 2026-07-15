@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Mastery - Pertemuan 3 & 4</title>
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Highlight.js for Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-mode">
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2><i data-lucide="terminal-square" class="icon-lg"></i> JS Mastery 2.0</h2>
+            </div>
+            
+            <div class="progress-container">
+                <div class="progress-info">
+                    <span>Progress Belajar</span>
+                    <span id="overall-progress-text">0%</span>
+                </div>
+                <div class="progress-bar-bg">
+                    <div class="progress-bar-fill" id="overall-progress-bar"></div>
+                </div>
+            </div>
+
+            <div class="sidebar-nav" id="sidebar-nav">
+                <!-- Navigation items will be injected here by JS -->
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Navbar -->
+            <nav class="navbar">
+                <div class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i data-lucide="menu"></i>
+                </div>
+                <div class="navbar-title" id="navbar-title">
+                    Pertemuan 3: OOP JavaScript
+                </div>
+                <div class="navbar-actions">
+                    <button class="icon-btn" title="Toggle Theme" id="theme-toggle">
+                        <i data-lucide="moon"></i>
+                    </button>
+                    <a href="https://github.com" target="_blank" class="icon-btn" title="GitHub Repository">
+                        <i data-lucide="github"></i>
+                    </a>
+                </div>
+            </nav>
+
+            <!-- Dynamic Content Area -->
+            <div class="content-area" id="content-area">
+                <div class="welcome-screen">
+                    <i data-lucide="rocket" class="icon-xl"></i>
+                    <h1>Level Up Javascript Anda</h1>
+                    <p>Materi OOP & Portofolio Case Study. Pilih menu di sidebar.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Highlight.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
