@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modul 03: Latihan</title>
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <style>
+        body {
+            font-family: sans-serif;
+            background: linear-gradient(to right, #f0b3d0, #e6c496);
+            margin: 0;
+            padding: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #444;
+        }
+
+        .card-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .kartu-profil {
+            background: white;
+            border-radius: 15px;
+            width: 250px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            text-align: center;
+
+            transition: all 0.3s ease; /* biar halus */
+            cursor: pointer;
+        }
+
+        .kartu-profil img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #d89ab7;
+        }
+
+        .kartu-profil h3 {
+            margin: 10px 0 5px;
+        }
+
+        .kartu-profil p {
+            margin: 0;
+            color: #666;
+        }
+
+        .kartu-profil:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+
+        // COMPONENT (PROPS)
+        function ProfilPengguna({ gambar, nama, hobi }) {
+            return (
+                <div className="kartu-profil">
+                    <img src={gambar} alt={"Foto " + nama} />
+                    <h3>{nama}</h3>
+                    <p>{hobi}</p>
+                </div>
+            );
+        }
+
+        // APP (PARENT COMPONENT)
+        function App() {
+            return (
+                <div>
+                    <h1>Kartu Profil dan Hobi</h1>
+
+                    <div className="card-wrapper">
+                        <ProfilPengguna 
+                            gambar="images/putri.jpeg"
+                            nama="Putri"
+                            hobi="Mendengarkan Musik"
+                        />
+
+                        <ProfilPengguna 
+                            gambar="images/ririn.jpeg"
+                            nama="Ririn"
+                            hobi="Melukis"
+                        />
+
+                        <ProfilPengguna 
+                            gambar="images/ainun.jpeg"
+                            nama="Ainun"
+                            hobi="Bernyanyi"
+                        />
+                    </div>
+                </div>
+            );
+        }
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+
+    </script>
+</body>
+</html>

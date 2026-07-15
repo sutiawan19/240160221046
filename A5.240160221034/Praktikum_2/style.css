@@ -1,0 +1,92 @@
+/* Mengatur tampilan body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: cornflowerblue;
+    color: black;
+    margin: 30px;
+    transition: background-color 0.8s ease;
+}
+
+/* Judul utama */
+h1 {
+    color: black;
+    text-align: center;
+}
+
+/* Sub judul */
+h2 {
+    color: black;
+    margin-top: 20px;
+}
+
+audio {
+    margin-bottom: 20px;
+}
+
+/* Paragraf */
+p {
+    line-height: 1.6;
+}
+
+/* Gambar */
+img {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Tabel */
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin-top: 10px;
+    background-color: rgba(255,255,255,0.2);
+}
+th {
+    background-color: #6FA8DC;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+/* List */
+ul, ol {
+    margin-left: 20px;
+}
+
+/* Link */
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #dbe8ff;
+    text-decoration: underline;
+}
+
+/* Class untuk teks tengah */
+.text-center {
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    background-color: white;
+    color: cornflowerblue;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #dbe8ff;
+}

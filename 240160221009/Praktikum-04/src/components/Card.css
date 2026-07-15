@@ -1,0 +1,9 @@
+.card-wrapper {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  width: 220px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
